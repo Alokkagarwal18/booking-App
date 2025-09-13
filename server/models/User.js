@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema({
   _id: {type: String, required: true},
@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
 
 },{timestamps: true}
 );
-
-const User = mongoose.model("use", userSchema);
+ 
+const User = mongoose.model("user", userSchema);
 
 export default User;
