@@ -1,0 +1,11 @@
+node_modules# Root node_modules (backend)
+node_modules/
+
+# Client
+client/node_modules/
+client/build/
+client/dist/
+
+# Other common ignores
+.env
+.DS_Store
