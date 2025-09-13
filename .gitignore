@@ -1,11 +1,11 @@
-node_modules# Root node_modules (backend)
+# Node
 node_modules/
-
-# Client
 client/node_modules/
+server/node_modules/
+
+# Build
 client/build/
 client/dist/
 
-# Other common ignores
+# Env
 .env
-.DS_Store
