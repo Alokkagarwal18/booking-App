@@ -1,11 +1,3 @@
-# Node
-node_modules/
-client/node_modules/
-server/node_modules/
 
-# Build
-client/build/
-client/dist/
+node_modules
 
-# Env
-.env
