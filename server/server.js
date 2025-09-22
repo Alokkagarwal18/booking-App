@@ -22,14 +22,6 @@ app.use(cors()) // enable Cross origin Resource Sharing
 //API to listen to STRIPE webhooks
 app.post('/api/stripe', express.raw({type: "application/json"}), stripeWebhooks);
 
-// app.use(cors({
-//   origin: "http://localhost:5173", // your frontend URL
-//   methods: ["GET","POST","PUT","DELETE","OPTIONS"],
-//   allowedHeaders: ["Content-Type","Authorization"],
-//   credentials: true
-// }));
-
-
 //Middleware
 app.use(express.json())
 app.use(clerkMiddleware())
@@ -38,7 +30,7 @@ app.use(clerkMiddleware())
 app.use("/api/clerk", clerkWebhooks);
 
 
-app.get('/', (req, res)=> res.send("API is working fin"))
+app.get('/', (req, res)=> res.send("API is working fine"))
 app.use('/api/user', userRouter)
 app.use('/api/hotels', hotelRouter)
 app.use('/api/rooms', roomRouter)
